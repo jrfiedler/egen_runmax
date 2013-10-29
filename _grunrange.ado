@@ -1,5 +1,5 @@
 *! version 1.0.0  28oct2013
-program define _grunwid
+program define _grunrange
 	version 7
 
 	gettoken type 0 : 0
