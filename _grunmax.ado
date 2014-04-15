@@ -1,6 +1,6 @@
-*! version 1.0.0  28oct2013
+*! version 1.0.0  15apr2014
 program define _grunmax
-	version 7
+	version 9
 
 	gettoken type 0 : 0
 	gettoken vn   0 : 0

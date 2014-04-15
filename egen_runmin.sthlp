@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 0.1.0 28oct2013}{...}
+{* *! version 1.0.0 15apr2014}{...}
 
 {title:Title}
 
@@ -19,11 +19,11 @@
 {synoptset 20}{...}
 {synopthdr}
 {synoptline}
-{synopt:{opth by(varlist)}}specify variables to group by when finding min 
+{synopt:{opth by(varlist)}}group by specified variables when finding min 
 	value; {cmd:runmin} will calculate the running min separately in each 
 	group implied by {it:varlist}{p_end}
 	
-{synopt:{opth sort(varlist)}}specify variables to sort on before calculating
+{synopt:{opth sort(varlist)}}sort on specified variables before calculating
 	the running min; the original sort order will be restored afterwards{p_end}
 {synoptline}
 {p2colreset}{...}
@@ -139,6 +139,11 @@
 {p2col 5 15 19 2: Scalars}{p_end}
 {synopt:{cmd:r(N)}}number of missing values generated{p_end}
 {p2colreset}{...}
+
+
+{title:See also}
+
+{help egen_runmin:egen_runmax}, {help egen_runrange:egen_runrange}
 
 
 {title:Author}
