@@ -4,20 +4,11 @@ Stata package for running max, min, and range
 Installing
 ----------
 
-Within Stata you can get a description of this package with
-
-    net from https://raw.githubusercontent.com/jrfiedler/egen_runmax/master
-	net describe egen_runmax
-
-From there you can install this package by clicking on the "click here to install" text, or with
-
-    net install egen_runmax
-
-Alternately, you can clone the Git repo with
+You can clone the Git repo with
 
     git clone https://github.com/jrfiedler/egen_runmax
 
-Or you can download a zip archive by clicking on the button on the right side of this page.
+Or you can download a zip archive by clicking on the "Download ZIP" button on the right side of this page.
 
 Syntax
 ------
