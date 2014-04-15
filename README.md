@@ -22,15 +22,15 @@ Or you can download a zip archive by clicking on the button on the right side of
 Syntax
 ------
 
-*egen* [type] _newvar_ = *runmax*(_varname_) [_if_] [_in_] [, _options_]
+**egen** [_type_] _newvar_ = **runmax**(_varname_) [_if_] [_in_] [, _options_]
 
 _options:_
 
-1. *by*(_varlist_)
+1. **by**(_varlist_)
 
   - group by specified variables when finding values; the values will  be calculated separately in each group implied by _varlist_
         
-2. *sort*(_varlist_)
+2. **sort**(_varlist_)
 
   - sort on specified variables before finding values; the original sort order will be restored afterwards
 
