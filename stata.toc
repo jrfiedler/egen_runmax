@@ -1,8 +1,21 @@
 v 3
 
+p egen_runmax calculate running max, min, and range
+d
 d 'EGEN_RUNMAX': calculate running max, min, and range
-d This package includes three {cmd:egen} programs for calculating the running max, min, and range of a variable. The running value can be calculated within groups determined by one or more other variables.
+d
+d This package includes three {cmd:egen} programs for calculating
+d the running max, min, and range of a variable. The running value
+d can be calculated within groups determined by one or more other
+d variables.
+d
+d KW: egen
+d KW: max
+d KW: min
+d KW: range
+d
 d Requires: Stata version 9
+d
 d Author: James Fiedler
 d Support: jrfiedler@gmail.com
-d {stata net install egen_runmax:click here to install}
+d

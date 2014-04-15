@@ -35,13 +35,17 @@
 {cmd:runrange} generates a variable that contains the running range of the given
 	numeric variable, that is, the running max minus the running min. Missing 
 	values will be excluded; the generated variable
-	will be missing where the source variable was. If the option 
-	{opt sort(varlist)} is specified, then the data is sorted by these
-	variables before calculating the running range, with the original sort order
-	restored afterwards. If {opt by(varlist)} is specified, then 
-	{cmd:runrange} does the above separately for each group implied by the given 
-	varlist. The generated variable will be missing where any {opt by}
-	variable is missing.
+	will be missing where the source variable was.
+	
+{pmore}
+	If the option {opt sort(varlist)} is specified, then the data is sorted by 
+	these variables before calculating the running range, with the original sort 
+	order restored afterwards.
+	
+{pmore}
+	If {opt by(varlist)} is specified, then the above is done separately for 
+	each group implied by the given varlist. The generated variable will be 
+	missing where any {opt by} variable is missing.
 	
 {pmore}
 	The type of the generated variable (whether specified or default) 

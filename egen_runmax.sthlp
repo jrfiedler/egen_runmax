@@ -34,13 +34,17 @@
 {phang}
 {cmd:runmax} generates a variable that contains the running max of the given
 	numeric variable. Missing values will be excluded; the generated variable
-	will be missing where the source variable was. If the option 
-	{opt sort(varlist)} is specified, then the data is sorted by these
-	variables before calculating the running max, with the original sort order
-	restored afterwards. If {opt by(varlist)} is specified, then 
-	{cmd:runmax} does the above separately for each group implied by the given 
-	varlist. The generated variable will be missing where any {opt by}
-	variable is missing.
+	will be missing where the source variable was.
+	
+{pmore}
+	If the option {opt sort(varlist)} is specified, then the data is sorted by 
+	these variables before calculating the running max, with the original sort 
+	order restored afterwards.
+	
+{pmore}
+	If {opt by(varlist)} is specified, then the above is done separately for 
+	each group implied by the given varlist. The generated variable will be 
+	missing where any {opt by} variable is missing.
 	
 {pmore}
 	The type of the generated variable (whether specified or default) 

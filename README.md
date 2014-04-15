@@ -15,6 +15,11 @@ Syntax
 
 **egen** [_type_] _newvar_ = **runmax**(_varname_) [_if_] [_in_] [, _options_]
 
+**egen** [_type_] _newvar_ = **runmin**(_varname_) [_if_] [_in_] [, _options_]
+
+**egen** [_type_] _newvar_ = **runrange**(_varname_) [_if_] [_in_] [, _options_]
+
+
 _options:_
 
 1. **by**(_varlist_)
@@ -25,6 +30,16 @@ _options:_
 
   - sort on specified variables before finding values; the original sort order will be restored afterwards
 
+
+Description
+-----------
+These commands generate a variable that contains the running max/min/range of the given numeric variable. Missing values will be excluded; the generated variable will be missing where the source variable was.
+
+If the option **sort**(_varlist_) is specified, then the data is sorted by these variables before calculating the running value, with the original sort order restored afterwards.
+
+If **by**(_varlist_) is specified, then the running value is calculated separately for each group implied by the given varlist. The generated variable will be missing where any **by** variable is missing.
+	
+The type of the generated variable (whether specified or default) will be overridden if it seems that a different type is needed to hold the results.
 
 
 Example usage
